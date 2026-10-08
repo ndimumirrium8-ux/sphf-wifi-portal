@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPHF Wi-Fi Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="portal">
+
+        <section class="portal-card">
+
+            <!-- Wi-Fi Logo -->
+            <div class="wifi-logo">
+                📶
+            </div>
+
+            <!-- Main Heading -->
+            <h1>SPHF Wi-Fi</h1>
+
+            <h2>Welcome to the Community Wi-Fi</h2>
+
+            <p class="portal-description">
+                Connect to the SPHF community network by
+                completing the form below.
+            </p>
+
+            <!-- Connection Form -->
+            <form id="wifiForm">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your demo name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="0700000000"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="connect-btn"
+                >
+                    Connect to Wi-Fi
+                </button>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="portal-footer">
+                <strong>SPHF Wi-Fi</strong><br>
+                Community Wi-Fi Portal Training Prototype
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

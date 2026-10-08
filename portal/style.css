@@ -1,0 +1,244 @@
+/* =========================================
+   SPHF WI-FI PORTAL
+   Main Stylesheet
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #071a33, #0b4f8a, #087f8c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: #172033;
+}
+
+/* Main portal container */
+
+.portal {
+    width: 100%;
+    max-width: 470px;
+}
+
+/* Portal card */
+
+.portal-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 24px;
+    padding: 40px 35px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Wi-Fi logo */
+
+.wifi-logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #087f8c, #168de2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(8, 127, 140, 0.3);
+}
+
+/* Heading */
+
+.portal-card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #071a33;
+}
+
+.portal-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0b4f8a;
+}
+
+/* Description */
+
+.portal-description {
+    color: #667085;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* Form */
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #172033;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #168de2;
+    box-shadow: 0 0 0 4px rgba(22, 141, 226, 0.12);
+}
+
+/* Connect button */
+
+.connect-btn {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #087f8c, #168de2);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.connect-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(22, 141, 226, 0.3);
+}
+
+.connect-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+
+.portal-footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #667085;
+}
+
+.portal-footer strong {
+    color: #0b4f8a;
+}
+
+/* Status messages */
+
+.message {
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.success {
+    background: #e8f7ee;
+    color: #18794e;
+}
+
+.error {
+    background: #fdecec;
+    color: #b42318;
+}
+
+/* Connection status */
+
+.status-card {
+    text-align: center;
+}
+
+.status-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e8f7ee;
+    color: #18794e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+/* Secondary buttons */
+
+.secondary-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    background: #eef4f8;
+    color: #0b4f8a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: #dcebf4;
+}
+
+/* Loading animation */
+
+.loading {
+    width: 42px;
+    height: 42px;
+    margin: 20px auto;
+    border: 4px solid #d9eaf5;
+    border-top: 4px solid #168de2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .portal-card {
+        padding: 30px 22px;
+        border-radius: 20px;
+    }
+
+    .portal-card h1 {
+        font-size: 28px;
+    }
+
+    .portal-card h2 {
+        font-size: 18px;
+    }
+
+    .wifi-logo {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+}
